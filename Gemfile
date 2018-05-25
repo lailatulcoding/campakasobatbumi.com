@@ -31,6 +31,19 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise_token_auth'
+gem 'apipie-rails'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'rails_admin'
+gem 'rails_admin_history_rollback'
+gem 'cloudinary'
+gem 'devise'
+gem 'devise_token_auth'
+gem 'pry-rails', '~> 0.3.4'
+gem 'audited'
+gem 'paper_trail'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
