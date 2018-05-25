@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <%= render 'layouts/monologue/application/head' %>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <div class="search-right">
+         <a class="mk-search-trigger mk-fullscreen-trigger" href="#" style="display: table-cell; padding: 0 30px 0 20px; vertical-align: middle;" id="search-button-listener">
+            <div id="search-button"><i class="fa fa-search"></i></div>
+          </a>
+          <div class="mk-fullscreen-search-overlay" id="mk-search-overlay">
+            <a href="#" class="mk-fullscreen-close" id="mk-fullscreen-close-button"><i class="fa fa-times"></i></a>
+            <div id="mk-fullscreen-search-wrapper">
+              <form method="get" id="mk-fullscreen-searchform" action="">
+                <input id="mk-fullscreen-search-input" type="text" value="" placeholder="Search...">
+                <i class="fa fa-search fullscreen-search-icon"><input value="" type="submit"></i>
+              </form>
+            </div>
+          </div>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right">
+        <!-- Navigation -->
+        <div style="z-index: 9999;">
+        <div class="b-nav triangle top">
+        <ul>
+          <li><a class="b-link" href="home.html">Home </a></li>
+          <li><a class="b-link" href="services.html">Service</a>
+            <ul class="triangle right">
+                <li><a href="#">Service V2</a></li>
+            </ul>
+          </li>
+          <li><a class="b-link" href="#!">Blog</a>
+            <ul class="triangle right">
+                <li><a href="blog-detail.html">Blog List</a></li>
+                <li><a href="blog-detail.html">Blog Detail</a></li>
+            </ul>
+          </li>
+          <li><a class="b-link" href="#!">Portfolio</a>
+            <ul class="triangle right">
+                <li><a href="portfolio-detail.html">Portfolio Detail</a></li>
+            </ul>
+          </li>
+          <li><a class="b-link" href="about-us.html" target="_blank">About Us</a></li>
+          <li><a class="b-link" href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        </div>
+
+        <!-- Burger-Icon -->
+        <div class="b-container">
+          <div class="b-menu">
+            <div class="b-bun b-bun--top"></div>
+            <div class="b-bun b-bun--mid"></div>
+            <div class="b-bun b-bun--bottom"></div>
+          </div>
+        </div>
+        </div>
+        </button>
+        <a class="navbar-brand" href="#">
+            <!-- <img src="assets/images/logo.png" height="35px"> -->
+            <%= image_tag('logo.png', height: '35') %>
+        </a>
+      </div>
+    </nav>
+
+    <div class="header-intro view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(<%= image_path('blog-bg.jpg') %>);">
+      <div class="full-bg-img">
+        <div class="container flex-center">
+          <div class="row pt-5 mt-3">
+            <div class="col-md-12 mb-3">
+              <div class="intro-info-content text-center">
+                <h5 class="font-up mb-1 font-bold wow fadeInDown" data-wow-delay="0.3s">We Read to Know</h5>
+                <h1 class="display-3 mb-1 wow fadeInDown" data-wow-delay="0.3s">News & Events</h1>
+                <div class="intro-separator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="blog">
+      <div class="container-fluid">
+        <div class="row">
+          <%= yield %>
+          <%= render 'layouts/monologue/application/sidebar' %>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-index" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 footerleft ">
+          <div class="logofooter">
+            <img src="assets/images/icon-large.png" height="45">
+             <span class="heading7">Who We Are</span>
+          </div>
+            <p class="info-company">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 paddingtop-bottom contact-footer">
+          <h6 class="heading7">Contact</h6>
+          <p><i class="fa fa-map-o" aria-hidden="true"></i>County, Street name - number</p>
+          <p><i class="fa fa-phone" aria-hidden="true"></i>032 267 899 442</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i>company@name.com</p>
+          <p><i class="fa fa-clock-o" aria-hidden="true"></i>Mon.-Fri.: 10-20 Sun.: 12-16</p>
+        </div>
+        <div class="col-md-4 col-sm-6 paddingtop-bottom contact-footer">
+          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <div class="fb-xfbml-parse-ignore">
+            <h6 class="heading7">Follow Us on Social Media</h6>
+                <p class="info-company">Find Us On : </p>
+                <div class="sosmed-icon">
+                <%= render partial: "layouts/monologue/application/social_icons" %>
+                <a href="#"><span>Facebook</span></a>
+                <a href="#"><span>Twitter</span></a>
+                <a href="#"><span>Google+</span></a>
+                <a href="#"><span>Github</span></a>
+                <a href="#"><span>Dribbble</span></a>
+                <a href="#"><span>CodePen</span></a>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- default from monologue -->
+  <%= render 'layouts/monologue/application/disqus' %>
+  <%= render 'layouts/monologue/application/gauge_analytics' %>
+</body>
+</html>
