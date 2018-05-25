@@ -4,4 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   include DeviseTokenAuth::Concerns::User
+
+  mount_uploader :avatar, ImageUploader
+  validates :name, presence: true
+  validates :username, uniqueness: true, if: :nickname_existed?
 end
