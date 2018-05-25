@@ -204,81 +204,70 @@
           <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="misc">Misc</a>
         </div>
         <div style="clear:both;"></div>
-        <div id="portfolio-wrap">
-          <div class="wow fadeInUp tile scale-anm design all">
-                <img src="<%= image_path('pf-1.jpg') %>" alt="Example Portfolio" />
-                <div class="portfolio-hover">
-                <div class="portfolio-description">
-                    <h4>Lorem Ipsum</h4>
-                    <br>
-                      <p>Kategori</p>
-                      <br>
-                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
-                </div>
-            </div>
-          </div>
-          <div class="wow fadeInUp tile scale-anm workspace all">
-            <img src="<%= image_path('pf-2.jpg') %>" alt="Example Portfolio" />
-            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-3">
-                <div class="portfolio-description">
-                    <h4>Lorem Ipsum</h4>
-                    <br>
-                      <p>Kategori</p>
-                      <br>
-                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
-                </div>
-            </div>
-          </div>
-          <div class="wow fadeInUp tile scale-anm workspace all">
-            <img src="<%= image_path('pf-3.jpg') %>" alt="Example Portfolio" />
-            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-4">
-                <div class="portfolio-description">
-                    <h4>Lorem Ipsum</h4>
-                    <br>
-                      <p>Kategori</p>
-                      <br>
-                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
-                </div>
-            </div>
-          </div>
-          <div class="wow fadeInUp tile scale-anm design misc all">
-            <img src="<%= image_path('pf-4.jpg') %>" alt="Example Portfolio" />
-            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-5">
-                <div class="portfolio-description">
-                    <h4>Lorem Ipsum</h4>
-                    <br>
-                      <p>Kategori</p>
-                      <br>
-                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
-                </div>
-            </div>
-          </div>
-          <div class="wow fadeInUp tile scale-anm photography all">
-            <img src="<%= image_path('pf-5.jpg') %>" alt="Example Portfolio" />
-            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-6">
-                <div class="portfolio-description">
-                    <h4>Lorem Ipsum</h4>
-                    <br>
-                      <p>Kategori</p>
-                      <br>
-                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
-                </div>
-            </div>
-          </div>
-            <div class="wow fadeInUp tile scale-anm misc design all">
-              <img src="<%= image_path('pf-6.jpg') %>" alt="Example Portfolio" />
-              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
-                <div class="portfolio-description">
-                    <h4>Lorem Ipsum</h4>
-                    <br>
-                      <p>Kategori</p>
-                      <br>
-                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
-                </div>
-            </div>
-          </div>
+        <% if @product_images.length < 7 %>
+          <div id="portfolio-wrap">
             <div class="wow fadeInUp tile scale-anm design all">
-                <img src="<%= image_path('pf-7.jpg') %>" alt="Example Portfolio" />
+                  <img src="<%= image_path('pf-1.jpg') %>" alt="Example Portfolio" />
+                  <div class="portfolio-hover">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm workspace all">
+              <img src="<%= image_path('pf-2.jpg') %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-3">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm workspace all">
+              <img src="<%= image_path('pf-3.jpg') %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-4">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm design misc all">
+              <img src="<%= image_path('pf-4.jpg') %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-5">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm photography all">
+              <img src="<%= image_path('pf-5.jpg') %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-6">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+              <div class="wow fadeInUp tile scale-anm misc design all">
+                <img src="<%= image_path('pf-6.jpg') %>" alt="Example Portfolio" />
                 <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
                   <div class="portfolio-description">
                       <h4>Lorem Ipsum</h4>
@@ -288,10 +277,114 @@
                         <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                   </div>
               </div>
-          </div>
+            </div>
+              <div class="wow fadeInUp tile scale-anm design all">
+                  <img src="<%= image_path('pf-7.jpg') %>" alt="Example Portfolio" />
+                  <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
+                    <div class="portfolio-description">
+                        <h4>Lorem Ipsum</h4>
+                        <br>
+                          <p>Kategori</p>
+                          <br>
+                          <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+              </div>
             </div>
           </div>
-        </div>
+        <% else %>
+          <div id="portfolio-wrap">
+            <div class="wow fadeInUp tile scale-anm design all">
+                  <img src="<%= @product_images[0] %>" alt="Example Portfolio" />
+                  <div class="portfolio-hover">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm workspace all">
+              <img src="<%= @product_images[1] %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-3">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm workspace all">
+              <img src="<%= @product_images[2] %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-4">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm design misc all">
+              <img src="<%= @product_images[3] %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-5">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+            <div class="wow fadeInUp tile scale-anm photography all">
+              <img src="<%= @product_images[4] %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-6">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+              <div class="wow fadeInUp tile scale-anm misc design all">
+                <img src="<%= @product_images[5] %>" alt="Example Portfolio" />
+                <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+            </div>
+              <div class="wow fadeInUp tile scale-anm design all">
+                  <img src="<%= @product_images[6] %>" alt="Example Portfolio" />
+                  <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
+                    <div class="portfolio-description">
+                        <h4>Lorem Ipsum</h4>
+                        <br>
+                          <p>Kategori</p>
+                          <br>
+                          <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                    </div>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+
         </div>
     </section>
     <section id="team-section" class="container">
