@@ -1,7 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_products
+  skip_before_action :authenticate_user!, raise: false
 
   def index
+    Product.all
   end
 
   private
