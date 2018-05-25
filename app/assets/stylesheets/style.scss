@@ -6,11 +6,11 @@ body,
 }
 @font-face {
     font-family: kalam;
-    src: url(../assets/fonts/Kalam-Bold.ttf);
+    src: font-url('Kalam-Bold.ttf');
 }
 @font-face {
     font-family: simple-line-icons;
-    src: url(../assets/fonts/Simple-Line-Icons.ttf);
+    src: font-url('Simple-Line-Icons.ttf');
 }
 /* Navigation*/
 

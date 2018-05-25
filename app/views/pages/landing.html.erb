@@ -426,7 +426,7 @@
         </div>
         </section>
         <section id="full-team">
-          <div class="container-fluid background-full-team  header-intro view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/images/team-hand.jpg);">
+          <div class="container-fluid background-full-team  header-intro view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(<%= image_path('team-hand.jpg') %>);">
             <div class="row">
               <div class="col-md-12">
                 <p class="wow fadeInUp">Lihat Semua Anggota Kita <span>Klik Disini!</span></p>
@@ -678,7 +678,7 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'assets/images/map-marker.png';
+    var image = "<%= image_path('map-marker.png') %>";
     var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
