@@ -1,29 +1,29 @@
 $(function() {
     $('body').addClass('js');
-  
+
     var $hamburger = $('.hamburger'),
         $nav = $('#site-nav'),
         $masthead = $('#masthead');
-  
+
     $hamburger.click(function() {
       $(this).toggleClass('is-active');
       $nav.toggleClass('is-active');
       $masthead.toggleClass('is-active');
-      return false; 
+      return false;
     })
 });
-$( document ).ready(function() {  
+$( document ).ready(function() {
 $(function() {
     var selectedClass = "";
-    $(".fil-cat").click(function(){ 
-    selectedClass = $(this).attr("data-rel"); 
+    $(".fil-cat").click(function(){
+    selectedClass = $(this).attr("data-rel");
      $("#portfolio-wrap").fadeTo(100, 0.1);
     $("#portfolio-wrap div").not("."+selectedClass).fadeOut().removeClass('scale-anm');
     setTimeout(function() {
       $("."+selectedClass).fadeIn().addClass('scale-anm');
       $("#portfolio-wrap").fadeTo(300, 1);
-    }, 300); 
-    
+    }, 300);
+
   });
 });
 });
@@ -41,12 +41,12 @@ $( document ).ready(function() {
 });
 $( document ).ready(function() {
 // Google Maps Scripts
-var map = null;
+// var map = null;
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
-google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
-});
+// google.maps.event.addDomListener(window, 'load', init);
+// google.maps.event.addDomListener(window, 'resize', function() {
+//     map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+// });
 
 function init() {
     // Basic options for a simple Google Map
@@ -239,6 +239,7 @@ $( document ).ready(function() {
   });
 });
 $(document).ready(function(){
+  if (! $('.single-item').length) return;
     var prevButton = '<button type="button" data-role="none" class="slick-prev" aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1"><path fill="#FFFFFF" d="M 16,16.46 11.415,11.875 16,7.29 14.585,5.875 l -6,6 6,6 z" /></svg></button>',
         nextButton = '<button type="button" data-role="none" class="slick-next" aria-label="next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M8.585 16.46l4.585-4.585-4.585-4.585 1.415-1.415 6 6-6 6z"></path></svg></button>';
 
@@ -276,7 +277,7 @@ $window.on('scroll', function(){
 (function ($) {
     $.fn.countTo = function (options) {
         options = options || {};
-        
+
         return $(this).each(function () {
             // set options for current element
             var settings = $.extend({}, $.fn.countTo.defaults, {
@@ -286,58 +287,58 @@ $window.on('scroll', function(){
                 refreshInterval: $(this).data('refresh-interval'),
                 decimals:        $(this).data('decimals')
             }, options);
-            
+
             // how many times to update the value, and how much to increment the value on each update
             var loops = Math.ceil(settings.speed / settings.refreshInterval),
                 increment = (settings.to - settings.from) / loops;
-            
+
             // references & variables that will change with each update
             var self = this,
                 $self = $(this),
                 loopCount = 0,
                 value = settings.from,
                 data = $self.data('countTo') || {};
-            
+
             $self.data('countTo', data);
-            
+
             // if an existing interval can be found, clear it first
             if (data.interval) {
                 clearInterval(data.interval);
             }
             data.interval = setInterval(updateTimer, settings.refreshInterval);
-            
+
             // initialize the element with the starting value
             render(value);
-            
+
             function updateTimer() {
                 value += increment;
                 loopCount++;
-                
+
                 render(value);
-                
+
                 if (typeof(settings.onUpdate) == 'function') {
                     settings.onUpdate.call(self, value);
                 }
-                
+
                 if (loopCount >= loops) {
                     // remove the interval
                     $self.removeData('countTo');
                     clearInterval(data.interval);
                     value = settings.to;
-                    
+
                     if (typeof(settings.onComplete) == 'function') {
                         settings.onComplete.call(self, value);
                     }
                 }
             }
-            
+
             function render(value) {
                 var formattedValue = settings.formatter.call(self, value, settings);
                 $self.html(formattedValue);
             }
         });
     };
-    
+
     $.fn.countTo.defaults = {
         from: 0,               // the number the element should start at
         to: 0,                 // the number the element should end at
@@ -348,7 +349,7 @@ $window.on('scroll', function(){
         onUpdate: null,        // callback method for every time the element is updated
         onComplete: null       // callback method for when the element finishes updating
     };
-    
+
     function formatter(value, settings) {
         return value.toFixed(settings.decimals);
     }
@@ -357,6 +358,7 @@ $window.on('scroll', function(){
 jQuery(function ($) {
     var a = 300;
 $(window).scroll(function() {
+  if (!$('#counter').length) return;
   var oTop = $('#counter').offset().top - window.innerHeight;
   if (a == 300 && $(window).scrollTop() > oTop) {
 
@@ -366,10 +368,10 @@ $(window).scroll(function() {
       return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
     }
   });
-  
+
   // start all the timers
-  $('.count-archievement').each(count);  
-  
+  $('.count-archievement').each(count);
+
   function count(options) {
     var $this = $(this);
     options = $.extend({}, options || {}, $this.data('countToOptions') || {});

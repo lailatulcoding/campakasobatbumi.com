@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jaralax.min
 //= require main
 //= require mdb.min
 //= require popper.min
