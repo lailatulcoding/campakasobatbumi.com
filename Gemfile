@@ -44,6 +44,7 @@ gem 'devise_token_auth'
 gem 'pry-rails', '~> 0.3.4'
 gem 'audited'
 gem 'paper_trail'
+gem 'phonelib'
 
 
 group :development, :test do
