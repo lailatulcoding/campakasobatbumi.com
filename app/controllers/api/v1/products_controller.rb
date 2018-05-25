@@ -1,17 +1,15 @@
 module Api
   module V1
     class ProductsController < Api::V1::ApiController
-      skip_before_action :verify_authenticity_token
-      skip_before_action :authenticate_user!, raise: false
 
       def index
-        @cities = City.all
-        render json:  @cities
+        @products = Product.all
+        render json:  @products
       end
 
       def show
-        @province = City.find(params[:id])
-        render json: @province
+        @product = Product.find(params[:id])
+        render json: @product
       end
 
     end
