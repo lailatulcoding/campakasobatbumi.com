@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       devise_scope :user do
 
         resources :products, only: [:index, :show]
+        resources :feedbacks, only: [:create]
       end
     end
   end
