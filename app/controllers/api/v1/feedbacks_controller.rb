@@ -6,7 +6,7 @@ module Api
 
       def create
         Feedback.create!(feedback_params)
-       render json: { success: 'Your feedback succesfully sended' }, status: :ok
+        render json: { success: 'Your feedback succesfully sended' }, status: :ok
       end
 
       private
