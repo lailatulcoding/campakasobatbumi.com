@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     # sessions:  'api/v1/sessions',
     # passwords:  'api/v1/passwords'
   }
-
+  resources :products, only: :index
   namespace :api, defaults: { format: :json }  do
     namespace :v1 do
       # get    'versions/state'       => 'versions#state'
