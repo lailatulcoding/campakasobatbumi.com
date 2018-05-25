@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'monologue'
 
 gem 'devise_token_auth'
 gem 'apipie-rails'
