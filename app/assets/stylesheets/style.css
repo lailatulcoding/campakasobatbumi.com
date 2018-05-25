@@ -3502,10 +3502,11 @@ transform: translateY(-1500%)!important;
   font-size: 1.2rem;
   font-weight: 500;
   padding-bottom: 10px;
+}
 
 a{
   color: #fff;
 }
 .tile {
-  position: relative!important;
+  position: relative !important;
 }
