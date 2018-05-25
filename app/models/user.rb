@@ -7,5 +7,5 @@ class User < ActiveRecord::Base
 
   mount_uploader :avatar, ImageUploader
   validates :name, presence: true
-  validates :username, uniqueness: true, if: :nickname_existed?
+  validates :username, uniqueness: true
 end
