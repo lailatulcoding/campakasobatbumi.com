@@ -19,7 +19,9 @@
             <div style="z-index: 9999;">
             <div class="b-nav triangle top">
             <ul>
-              <li><a class="b-link" href="home.html">Home </a></li>
+              <li>
+                <%= link_to('home', root_path, html_options = {class: 'b-link'}) %>
+              </li>
               <li><a class="b-link" href="services.html">Service</a>
                 <ul class="triangle right">
                     <li><a href="#">Service V2</a></li>
@@ -37,7 +39,9 @@
                 </ul>
               </li>
               <li><a class="b-link" href="about-us.html" target="_blank">About Us</a></li>
-              <li><a class="b-link" href="contact.html" target="_blank">Contact</a></li>
+              <li>
+                <%= link_to('contact', contact_pages_path, html_options = {class: 'b-link'}) %>
+              </li>
             </ul>
             </div>
 
