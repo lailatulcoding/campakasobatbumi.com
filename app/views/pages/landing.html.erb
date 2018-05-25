@@ -1,2 +1,584 @@
-<h1>Pages#landing</h1>
-<p>Find me in app/views/pages/landing.html.erb</p>
+<!--Navbar-->
+
+    <!--/.Navbar-->
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-sample" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox" >
+
+            <!--First-2 slide-->
+            <div class="carousel-item active">
+                <!--Mask color-->
+                <div class="view hm-black-light">
+                    <!--Image source-->
+                        <img class="d-block img-c-res" src="<%= image_path('bg-index.jpg') %>" alt="First slide">
+                    <div class="full-bg-img"></div>
+                </div>
+
+                <!--Caption-->
+                <div class="carousel-caption">
+                    <div class="flex-center animated fadeInDown">
+                        <ul>
+                            <li>
+                                <p class="sub-header">Tentang Kami.</p>
+                            </li>
+                            <li>
+                                <h1 class="h1-responsive"><strong>Campaka Sobat Bumi</strong></h1>
+                            </li>
+                            <li class="desc-header">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                            </li>
+                            <li>
+                                <a target="_blank" href="#" class="btn btn-primary btn-lg btn-circle" rel="nofollow">Take A Tour</a>
+                            </li>
+                            <li>
+                                <div class="mouse_scroll">
+                                    <div class="mouse">
+                                        <div class="wheel"></div>
+                                    </div>
+                                    <div>
+                                        <span class="m_scroll_arrows unu"></span>
+                                        <span class="m_scroll_arrows doi"></span>
+                                        <span class="m_scroll_arrows trei"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Caption-->
+            </div>
+            <!--/First-2 slide-->
+
+
+        </div>
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!--/.Main layout-->
+
+    <!--About Section-->
+    <section id="about-section">
+      <div class="about-section mx-auto">
+        <div class="container-fluid">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="<%= image_path('info-icon-1.png') %>" width="80%" alt="Responsive Device Icon">
+                </div>
+                <div class="col-md-9">
+                  <h3>Buat Tokomu Menjadi Online</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.5s">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="<%= image_path('info-icon-2.png') %>" width="80%" alt="Clean UI UX Device Icon">
+                </div>
+                <div class="col-md-9">
+                  <h3>Beli Barang yang Kamu Butuhkan</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.7s">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="<%= image_path('info-icon-3.png') %>" width="80%" alt="Thumbs Up Icon">
+                </div>
+                <div class="col-md-9">
+                  <h3>Jual berbagai macam produk</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="detail-section">
+      <div class="detail-section mx-auto">
+        <div class="container">
+          <div class="row override-content-d">
+            <div class="col-md-12 col-lg-6 col-lg-push-6  col-md-offset-0 hidden-md-down">
+              <ul>
+                <li>
+                    <img src="<%= image_path('mac-mockup-index.png') %>" width="100%" class="wow fadeInLeft" data-wow-delay="0.3s" alt="Imac Mockup">
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12 col-lg-6 col-lg-pull-6 vertical-center-info-d wow fadeInRight" data-wow-delay="0.3s">
+            <ul class="detail-info">
+                <li>
+                    <p>Bertemulah dengan Kami <b>Campaka Sobat Bumi</b>.</p>
+                </li>
+                <li>
+                    <h1 class="h1-responsive"><strong>Onlinekan Toko Anda</strong></h1>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non elementum nunc. Praesent molestie justo dictum pharetra aliquam. Nam neque nulla, venenatis non iaculis non, scelerisque ultricies metus.</p>
+                </li>
+                <li>
+                    <a target="_blank" href="#" class="btn btn-black btn-lg btn-circle">Tentang CSB</a>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <hr class="separator-detail">
+            <h2 class="separator-d-text">Prestasi</h2>
+          </div>
+          <div id="counter" class="row achievement">
+            <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.3s">
+             <div class="row ">
+                <div class="col-md-5">
+                  <h1 class="count-archievement wow fadeInLeft" data-wow-delay="0.5s" data-to="720" data-speed="8000"></h1>
+                </div>
+                <div class="col-md-7">
+                  <h3>Aktif</h3>
+                  <p>Pelanggan</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.5s">
+             <div class="row">
+                <div class="col-md-5">
+                  <h1  class="count-archievement" data-to="26" data-speed="7000"></h1>
+                </div>
+                <div class="col-md-7">
+                  <h3>Toko</h3>
+                  <p>Online</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.7s">
+             <div class="row">
+                <div class="col-md-5">
+                  <h1  class="count-archievement" data-to="89" data-speed="6000"></h1>
+                </div>
+                <div class="col-md-7">
+                  <h3>Barang</h3>
+                  <p>Terjual</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.9s">
+             <div class="row">
+                <div class="col-md-5">
+                  <h1  class="count-archievement" data-to="15" data-speed="5000"></h1>
+                </div>
+                <div class="col-md-7">
+                  <h3>Partner</h3>
+                  <p>Relawan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio-section">
+      <div class="portfolio-section mx-auto">
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+          <center>
+            <p>Produk</p>
+            <h1>Etalasi Kami</h1>
+          </center>
+          </div>
+        </div>
+      <div class="container-fluid">
+        <div class="toolbar-pf mb2 mt2 wow fadeInUp">
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="all">All</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="design">Design</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="photography">Photography</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="workspace">Workspace</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="misc">Misc</a>
+        </div>
+        <div style="clear:both;"></div>
+        <div id="portfolio-wrap">
+          <div class="wow fadeInUp tile scale-anm design all">
+                <img src="<%= image_path('pf-1.jpg') %>" alt="Example Portfolio" />
+                <div class="portfolio-hover">
+                <div class="portfolio-description">
+                    <h4>Lorem Ipsum</h4>
+                    <br>
+                      <p>Kategori</p>
+                      <br>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp tile scale-anm workspace all">
+            <img src="<%= image_path('pf-2.jpg') %>" alt="Example Portfolio" />
+            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-3">
+                <div class="portfolio-description">
+                    <h4>Lorem Ipsum</h4>
+                    <br>
+                      <p>Kategori</p>
+                      <br>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp tile scale-anm workspace all">
+            <img src="<%= image_path('pf-3.jpg') %>" alt="Example Portfolio" />
+            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-4">
+                <div class="portfolio-description">
+                    <h4>Lorem Ipsum</h4>
+                    <br>
+                      <p>Kategori</p>
+                      <br>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp tile scale-anm design misc all">
+            <img src="<%= image_path('pf-4.jpg') %>" alt="Example Portfolio" />
+            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-5">
+                <div class="portfolio-description">
+                    <h4>Lorem Ipsum</h4>
+                    <br>
+                      <p>Kategori</p>
+                      <br>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp tile scale-anm photography all">
+            <img src="<%= image_path('pf-5.jpg') %>" alt="Example Portfolio" />
+            <div class="portfolio-hover" data-toggle="modal" data-target="#modal-6">
+                <div class="portfolio-description">
+                    <h4>Lorem Ipsum</h4>
+                    <br>
+                      <p>Kategori</p>
+                      <br>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                </div>
+            </div>
+          </div>
+            <div class="wow fadeInUp tile scale-anm misc design all">
+              <img src="<%= image_path('pf-6.jpg') %>" alt="Example Portfolio" />
+              <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
+                <div class="portfolio-description">
+                    <h4>Lorem Ipsum</h4>
+                    <br>
+                      <p>Kategori</p>
+                      <br>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                </div>
+            </div>
+          </div>
+            <div class="wow fadeInUp tile scale-anm design all">
+                <img src="<%= image_path('pf-7.jpg') %>" alt="Example Portfolio" />
+                <div class="portfolio-hover" data-toggle="modal" data-target="#modal-caviart">
+                  <div class="portfolio-description">
+                      <h4>Lorem Ipsum</h4>
+                      <br>
+                        <p>Kategori</p>
+                        <br>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                  </div>
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section id="team-section" class="container">
+          <div class="team-section mx-auto">
+            <div class="row">
+              <div class="col-md-12">
+              <center>
+                <p>Orang-orang Terpilih</p>
+                <h1>Team Kami</h1>
+              </center>
+              </div>
+            </div>
+    <div class="row active-with-click">
+        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+            <article class="material-card black-team">
+                <h2>
+                    <span>Aria Red</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star-o"></i>
+                        Designer
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="<%= image_path('team-1.jpg') %>" style="width: 100%;" alt="Name of Team">
+                    </div>
+            </article>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.5s">
+            <article class="material-card black-team">
+                <h2>
+                    <span>Jack Doe</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star-o"></i>
+                        HR
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="<%= image_path('team-2.jpg') %>" style="width: 100%;" alt="Name of Team">
+                    </div>
+            </article>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.7s">
+            <article class="material-card black-team">
+                <h2>
+                    <span>Lily Angeline</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star-o"></i>
+                        Sekretaris
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="<%= image_path('team-3.jpg') %>" style="width: 100%;" alt="Name of Team">
+                    </div>
+            </article>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
+            <article class="material-card black-team">
+                <h2>
+                    <span>Barkawi</span>
+                    <strong>
+                        <i class="fa fa-fw fa-star-o"></i>
+                        CEO
+                    </strong>
+                </h2>
+                <div class="mc-content">
+                    <div class="img-container">
+                        <img class="img-responsive" src="<%= image_path('team-4.jpg') %>" style="width: 100%;" alt="Name of Team">
+                    </div>
+            </article>
+        </div>
+        </div>
+        </div>
+        </section>
+        <section id="full-team">
+          <div class="container-fluid background-full-team  header-intro view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(<%= image_path('team-hand.jpg') %>);">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="wow fadeInUp">Lihat Semua Anggota Kita <span>Klik Disini!</span></p>
+                <a  target="_blank" href="#" class="btn btn-primary btn-team wow fadeInUp">Lihat Semua Tim</a>
+              </div>
+              </div>
+            </div>
+          </section>
+        <section id="skill-section">
+          <div class="container skill-section mx-auto">
+          <div class="row">
+            <hr class="skill-black">
+            <h2 class="black-separator">Prestasi</h2>
+          </div>
+            <div class="row skill-content">
+              <div class="col-md-6 content-skill-info wow fadeInLeft"  data-wow-delay="0.5s">
+                <h4>Kemampuan Kami</h4>
+                <h1>Keterampilan dan Keahlian</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida lacinia tellus, vitae condimentum purus tristique sed.</p>
+
+                <p>nteger at lorem eget diam facilisis lacinia ac id massa. Nulla facilisi. Duis ornare facilisis ex non porttitor. Suspendisse potenti. Sed luctus suscipit tincidunt. Ornare facilisis ex non porttitor. Suspendisse potenti. Sed luctus suscipit tincidunt.</p>
+              </div>
+              <div class="col-md-6 wow fadeInLeft"  data-wow-delay="0.3s">
+              <div class="skills">
+                 <div class="skill">
+                    <div class="skill-title">
+                       Lorem Ipsum
+                    </div>
+                    <div class="skill-bar" data-bar="80"><span></span></div>
+                 </div>
+                 <div class="skill">
+                    <div class="skill-title">
+                       Lorem Ipsum
+                    </div>
+                    <div class="skill-bar" data-bar="85"><span></span></div>
+                 </div>
+                 <div class="skill">
+                    <div class="skill-title">
+                       Lorem Ipsum
+                    </div>
+                    <div class="skill-bar" data-bar="90"><span></span></div>
+                 </div>
+                 <div class="skill">
+                    <div class="skill-title">
+                       Lorem Ipsum
+                    </div>
+                    <div class="skill-bar" data-bar="60"><span></span></div>
+                 </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </section>
+          <div id="map"></div>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+// Google Maps Scripts
+var map = null;
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(new google.maps.LatLng(40.6700, -73.9400));
+});
+
+function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+        // Disables the default Google Maps UI components
+        disableDefaultUI: true,
+        scrollwheel: false,
+        draggable: false,
+
+        // How you would like to style the map.
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+        }]
+    };
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map');
+
+    // Create the Google Map using out element and options defined above
+    map = new google.maps.Map(mapElement, mapOptions);
+
+    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+    var image = "<%= image_path('map-marker.png') %>";
+    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image
+    });
+}
+});
+</script>

@@ -40,10 +40,10 @@ gem 'rails_admin'
 gem 'rails_admin_history_rollback'
 gem 'cloudinary'
 gem 'devise'
-gem 'devise_token_auth'
 gem 'pry-rails', '~> 0.3.4'
 gem 'audited'
 gem 'paper_trail'
+gem 'phonelib'
 
 
 group :development, :test do
