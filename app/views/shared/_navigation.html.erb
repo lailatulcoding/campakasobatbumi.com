@@ -1,7 +1,4 @@
-<!--Main Navigation-->
-    <header>
-
-<nav class="navbar navbar-dark fixed-top scrolling-navbar">
+<nav class="nav navbar navbar-dark fixed-top scrolling-navbar">
         <div class="container">
             <div class="search-right">
              <a class="mk-search-trigger mk-fullscreen-trigger" href="#" style="display: table-cell; padding: 0 30px 0 20px; vertical-align: middle;" id="search-button-listener">
@@ -55,58 +52,7 @@
             </div>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="<%= image_path('logo.png') %>" height="35px">
+                <img src="<%= image_path('logo.png') %>" height="35px" alt="Logo">
             </a>
         </div>
     </nav>
-    <!--/.Navbar-->
-
-        <!-- Intro Section -->
-        <div class="header-intro view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(<%= image_path('blog-bg.jpg') %>);">
-            <div class="full-bg-img">
-                <div class="container flex-center">
-                    <div class="row pt-5 mt-3">
-                        <div class="col-md-12 mb-3">
-                            <div class="intro-info-content text-center">
-                              <h5 class="font-up mb-1 font-bold wow fadeInDown" data-wow-delay="0.3s">We Read to Know</h5>
-                                <h1 class="display-3 mb-1 wow fadeInDown" data-wow-delay="0.3s">News & Events</h1>
-                                <div class="intro-separator"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
-    <!--Main Navigation-->
-
-    <!--Main Layout-->
-    <main>
-    <section id="blog">
-<!--         <div class="container-fluid breadcrumb-wrap">
-          <div class="row">
-            <div class="col-md-12">
-            <ul class="breadcrumb-blog">
-              <li><a href="#">Home</a></li>
-              <li>Current Page</li>
-            </ul>
-            </div>
-          </div>
-      </div> -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="row">
-                  <%= render @products %>
-                </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    </main>
-    <!--Footer-->
-
-<script>
-        new WOW().init();
-    </script>

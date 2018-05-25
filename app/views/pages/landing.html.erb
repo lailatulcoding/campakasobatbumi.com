@@ -1,62 +1,5 @@
 <!--Navbar-->
-    <nav class="nav navbar navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
-            <div class="search-right">
-             <a class="mk-search-trigger mk-fullscreen-trigger" href="#" style="display: table-cell; padding: 0 30px 0 20px; vertical-align: middle;" id="search-button-listener">
-                <div id="search-button"><i class="fa fa-search"></i></div>
-              </a>
-              <div class="mk-fullscreen-search-overlay" id="mk-search-overlay">
-                <a href="#" class="mk-fullscreen-close" id="mk-fullscreen-close-button"><i class="fa fa-times"></i></a>
-                <div id="mk-fullscreen-search-wrapper">
-                  <form method="get" id="mk-fullscreen-searchform" action="">
-                    <input id="mk-fullscreen-search-input" type="text" value="" placeholder="Search...">
-                    <i class="fa fa-search fullscreen-search-icon"><input value="" type="submit"></i>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <button class="navbar-toggler navbar-toggler-right">
-            <!-- Navigation -->
-            <div style="z-index: 9999;">
-            <div class="b-nav triangle top">
-            <ul>
-              <li><a class="b-link" href="home.html">Home </a></li>
-              <li><a class="b-link" href="services.html">Service</a>
-                <ul class="triangle right">
-                    <li><a href="#">Service V2</a></li>
-                </ul>
-              </li>
-              <li><a class="b-link" href="#!">Blog</a>
-                <ul class="triangle right">
-                    <li><a href="blog-detail.html">Blog List</a></li>
-                    <li><a href="blog-detail.html">Blog Detail</a></li>
-                </ul>
-              </li>
-              <li><a class="b-link" href="#!">Portfolio</a>
-                <ul class="triangle right">
-                    <li><a href="portfolio-detail.html">Portfolio Detail</a></li>
-                </ul>
-              </li>
-              <li><a class="b-link" href="about-us.html" target="_blank">About Us</a></li>
-              <li><a class="b-link" href="contact.html" target="_blank">Contact</a></li>
-            </ul>
-            </div>
 
-            <!-- Burger-Icon -->
-            <div class="b-container">
-              <div class="b-menu">
-                <div class="b-bun b-bun--top"></div>
-                <div class="b-bun b-bun--mid"></div>
-                <div class="b-bun b-bun--bottom"></div>
-              </div>
-            </div>
-            </div>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="<%= image_path('logo.png') %>" height="35px" alt="Logo">
-            </a>
-        </div>
-    </nav>
     <!--/.Navbar-->
 
     <!--Carousel Wrapper-->
@@ -254,11 +197,11 @@
         </div>
       <div class="container-fluid">
         <div class="toolbar-pf mb2 mt2 wow fadeInUp">
-          <button class="btn-content-pf fil-cat" href="" data-rel="all">All</button>
-          <button class="btn-content-pf fil-cat" data-rel="design">Design</button>
-          <button class="btn-content-pf fil-cat" data-rel="photography">Photography</button>
-          <button class="btn-content-pf fil-cat" data-rel="workspace">Workspace</button>
-          <button class="btn-content-pf fil-cat" data-rel="misc">Misc</button>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="all">All</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="design">Design</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="photography">Photography</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="workspace">Workspace</a>
+          <a class="btn-content-pf fil-cat" href="<%= products_path %>" data-rel="misc">Misc</a>
         </div>
         <div style="clear:both;"></div>
         <div id="portfolio-wrap">
@@ -270,7 +213,7 @@
                     <br>
                       <p>Kategori</p>
                       <br>
-                      <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                 </div>
             </div>
           </div>
@@ -282,7 +225,7 @@
                     <br>
                       <p>Kategori</p>
                       <br>
-                      <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                 </div>
             </div>
           </div>
@@ -294,7 +237,7 @@
                     <br>
                       <p>Kategori</p>
                       <br>
-                      <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                 </div>
             </div>
           </div>
@@ -306,7 +249,7 @@
                     <br>
                       <p>Kategori</p>
                       <br>
-                      <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                 </div>
             </div>
           </div>
@@ -318,7 +261,7 @@
                     <br>
                       <p>Kategori</p>
                       <br>
-                      <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                 </div>
             </div>
           </div>
@@ -330,7 +273,7 @@
                     <br>
                       <p>Kategori</p>
                       <br>
-                      <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                      <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                 </div>
             </div>
           </div>
@@ -342,7 +285,7 @@
                       <br>
                         <p>Kategori</p>
                         <br>
-                        <a  target="_blank" href="#" class="btn btn-primary btn-portfolio">Lihat Produk</a>
+                        <a  target="_blank" href="<%= products_path %>" class="btn btn-primary btn-portfolio">Lihat Produk</a>
                   </div>
               </div>
           </div>
