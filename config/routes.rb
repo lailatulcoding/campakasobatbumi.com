@@ -3,6 +3,13 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   root 'pages#landing'
+
+  resources :pages do
+  	collection do
+  		get :contact
+  	end
+  end
+  
   mount_devise_token_auth_for 'User', at: '/api/v1/users', controllers: {
     registrations:  'api/v1/registrations'
 

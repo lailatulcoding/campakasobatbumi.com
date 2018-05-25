@@ -1,0 +1,26 @@
+        <div class="header-intro-contact view hm-black-light jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/images/contact-bg.jpg);">
+            <div class="full-bg-img">
+                <div class="container flex-center">
+                    <div class="row pt-5 mt-3">
+                        <div class="col-md-12 mb-3">
+                            <div class="intro-info-content text-center">
+                              <h5 class="font-up mb-1 font-bold wow fadeInDown" data-wow-delay="0.3s">We Can Make Your Ideas Become Stunning Application?</h5>
+                                <h1 class="display-3 mb-1 wow fadeInDown" data-wow-delay="0.3s">Contact Us</h1>
+                                <div class="intro-separator"></div>
+                                <%= form_for @feedback, url: {action: 'create', controller: 'api/v1/feedbacks'}, :html => {:class => 'contact-form'} do |f| %>
+                                <div class="container">
+                                  <div class="row">
+                                      <%= f.text_field :name, placeholder:  "Name", :html => {:class => 'col-md-12'}%>
+                                      <%= f.email_field :email, placeholder:  "Email", :html => {:class => 'col-md-12'}%>
+                                      <%= f.telephone_field :phone_number, placeholder:  "Telephone", :html => {:class => 'col-md-12'}%>
+                                      <%= f.text_area :message, placeholder:  "Message", :html => {:class => 'col-md-12'}%>
+                                      <%= f.submit "Send My Message", :html => {:class => 'col-md-12'}%>
+                                  </div>
+                                </div>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
