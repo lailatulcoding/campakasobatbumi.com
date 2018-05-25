@@ -1,0 +1,32 @@
+
+
+<div class="col-md-3 blog-detail">
+  <form class="blog-search">
+    <input type="search" placeholder="Search">
+  </form>
+  <!-- <div class="blog-categories">
+    <h5>Categories</h5>
+    <p>Technology<span class="badge badge-default badge-blog">5</span></p>
+    <p>Design<span class="badge badge-default badge-blog">4</span></p>
+    <p>News<span class="badge badge-default badge-blog">6</span></p>
+    <p>World<span class="badge badge-default badge-blog">9</span></p>
+    <p>Website<span class="badge badge-default badge-blog">10</span></p>
+    <p>Video<span class="badge badge-default badge-blog">3</span></p>
+    <p>Uncategorized<span class="badge badge-default badge-blog">1</span></p>
+  </div> -->
+  <div class="blog-categories">
+    <h5>Recent Post</h5>
+    <% @index_posts = Monologue::Post.all.order('created_at desc').limit(4) %>
+    <% @index_posts.each do |post| %>
+      <p><a href="<%= post.full_url %>"><%= post.title %></p>
+    <% end %>
+  </div>
+  <form class="subscribe-blog">
+    <h5>Subscribe to Our Newsletter</h5>
+    <input type="email" placeholder="Type your Email" required>
+      <br>
+      <center>
+    <button>Subscribe</button>
+    </center>
+  </form>
+</div>
