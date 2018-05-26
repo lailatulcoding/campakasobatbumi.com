@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+existed staging URL: https://cempaka-sobat-bumi.herokuapp.com/
 
-Things you may want to cover:
+# Admin
+url: https://cempaka-sobat-bumi.herokuapp.com/admin
+email: admin@admin.com
+password: 123456
 
-* Ruby version
+# blog
+url: https://cempaka-sobat-bumi.herokuapp.com/blog
+admin blog url: https://cempaka-sobat-bumi.herokuapp.com/blog/monologue
+email: admin@admin.com
+password: 123456
 
-* System dependencies
+# Product listing page
+url: https://cempaka-sobat-bumi.herokuapp.com/products
 
-* Configuration
+# API BASE URL
+url: https://cempaka-sobat-bumi.herokuapp.com/api/v1
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#APPS
+Drive: https://drive.google.com/drive/folders/1G_pjzyqnxZrMDG4wBJVD402ylLaDaHyT?usp=sharing
